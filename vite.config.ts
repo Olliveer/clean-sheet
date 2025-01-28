@@ -17,4 +17,5 @@ export default defineConfig({
       plugins: [tailwind(), autoprefixer()],
     },
   },
+  base: "/clean-sheet/",
 });

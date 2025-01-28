@@ -1,18 +1,22 @@
 {
-  "name": "vue-file-processor",
+  "homepage": "https://olliveer.github.io/clean-sheet",
+  "name": "clean-sheet",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "vue-tsc -b && vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tanstack/vue-table": "^8.20.5",
     "@vueuse/core": "^10.11.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.3.0",
     "lucide-vue-next": "^0.344.0",
     "pinia": "^2.3.1",
     "radix-vue": "^1.9.12",
